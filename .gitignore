@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment files (NEVER commit these)
+.env
+.env.local
+.env.production
+
+# System files
+.DS_Store
+Thumbs.db
