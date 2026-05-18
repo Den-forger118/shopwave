@@ -2,11 +2,67 @@
 node_modules/
 vendor/
 
-# Environment files (NEVER commit these)
+# Environment files
 .env
 .env.local
+.env.*.local
 .env.production
 
-# System files
+# Laravel specific
+backend/storage/logs/*
+backend/bootstrap/cache/*
+backend/public/build/
+backend/public/hot
+backend/public/storage
+backend/storage/*.key
+backend/storage/pail/
+backend/.phpunit.result.cache
+backend/.phpunit.cache/
+backend/auth.json
+
+# Expo / React Native specific
+frontend/.expo/
+frontend/dist/
+frontend/web-build/
+frontend/expo-env.d.ts
+frontend/.kotlin/
+frontend/ios/
+frontend/android/
+
+# Build outputs
+frontend/out/
+
+# Test & coverage
+coverage/
+.nyc_output/
+
+# Editor & IDE
+.idea/
+.vscode/
+.nova/
+.zed/
+.cursor/
+*.swp
+*.swo
+
+# OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+*.env.docker
+
+# Misc
+*.pem
+*.key
+*.p12
+*.p8
+*.jks
+*.mobileprovision
